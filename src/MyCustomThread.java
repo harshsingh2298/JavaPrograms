@@ -11,6 +11,10 @@ class ThreadMain{
         MyCustomThread t2 = new MyCustomThread();
         t2.start(); // in thread call everytime i have to create new object
 
+
+
+
+
         RunnableCustom r1 = new RunnableCustom();
         Thread thread = new Thread(r1);// we have to create class object only once then we can create multiple threads after that
         thread.start();
@@ -18,5 +22,41 @@ class ThreadMain{
         thread1.start();
         Thread thread2 = new Thread(r1);
         thread2.start();
+
+
+        Thread userThread = new Thread(()-> {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("user Thread 1 " + i);
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        });
+
+        Thread userThread2 = new Thread(()-> {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("user Thread 2 " + i);
+            }
+        });
+
+        Thread DemonThread = new Thread(()-> {
+            try {
+
+                for (int i = 0; i < 10; i++) {
+                    System.out.println("Demon Thread " + i);
+                    Thread.sleep(1000);
+                }
+            }catch (Exception e){
+                System.out.println(e);
+            }
+
+        });
+
+            userThread.start();
+            userThread2.start();
+            DemonThread.setDaemon(true);
+            DemonThread.start();
     }
 }
