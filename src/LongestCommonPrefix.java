@@ -6,15 +6,25 @@ public class LongestCommonPrefix {
 
         // now i need to find the longest prefix int his string array
         char [] commonPrefix = new char[10];
-
+          int num =1;
+        char  a = 0;
         for (int i=0;i< str.length;i++){             // flower, flow, fly
-           String word = str[i];                     // flower
-           for (int j=0;j<word.length();j++){        // f,l,o,w,e,r
-               commonPrefix[j] = word.charAt(j);
+           String word = str[i];
+
+           for (int j=0;j<num;j++){
+                 a = word.charAt(j);
+
+               if (word.charAt(num)==a){
+                   commonPrefix[j] = word.charAt(num);
+                   num ++;
+               }
            }
-           if ()
 
         }
+        Object obj = new String("Hello, world!");
+        Class c = obj.getClass();
+        System.out.println(c.getName());
         System.out.println(Arrays.toString(commonPrefix));
+
     }
 }
