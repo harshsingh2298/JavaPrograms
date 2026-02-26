@@ -1,12 +1,16 @@
 import java.math.BigInteger;
 import java.util.stream.Stream;
 
-public class fibbonnaci {
+public class Fibbonnaci {
     public static void main(String[] args) {
         int num = 20;
         int a = 0;
         int b = 1;
         int next = 0;
+
+        Fibbrecursion fibbrecursion = new Fibbrecursion();
+        int print = fibbrecursion.fib(num);
+        System.out.println("Recursion fib "+print);
 
         for (int i=0; i<=num-1;i++){
             System.out.print(a+" ,");
@@ -40,5 +44,23 @@ public class fibbonnaci {
                 .limit(num)
                 .map(f -> f[0])
                 .forEach(n -> System.out.println(n));
+
+
+
+
+    }
+
+
+}
+//        ======================================== Using Recursion ======================================================
+ class Fibbrecursion {
+
+    int fib(int num) {
+        if (num <= 1) {
+
+            return num;
+        }
+        int result = fib(num-1)+fib(num-2);
+        return result;
     }
 }

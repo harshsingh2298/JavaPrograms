@@ -34,11 +34,11 @@ Day 4
 
 Fibonacci (loop + recursion)
 
-Power of number ?===============================?
+Power of number 
 
 Day 5
 
-Basic recursion problems
+Basic recursion problems  ?===============================?
 
 Print 1 to N
 
