@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 public class Fibbonnaci {
     public static void main(String[] args) {
 
-
+        int number = 10;
         int [] arr = new int[]{1,2,3,4,5,6,7,8,9};
         int start = 0;
         int end = arr.length-1;
@@ -20,6 +20,8 @@ public class Fibbonnaci {
         int[] reversed = fibbrecursion.reverse(arr,start,end);
         System.out.println(Arrays.toString(reversed));
         System.out.println("Recursion fib "+print);
+
+
 
         for (int i=0; i<=num-1;i++){
             System.out.print(a+" ,");
@@ -79,5 +81,15 @@ public class Fibbonnaci {
         }
         int result = fib(num-1)+fib(num-2);
         return result;
+    }
+
+
+    void printNumber(int num) {
+        if (num == 0) {
+            return;
+        }
+
+        printNumber(num - 1);
+        System.out.println(num);
     }
 }
