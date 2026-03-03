@@ -42,9 +42,9 @@ Basic recursion problems  ?===============================?
 
 Print 1 to N
 
-Factorial       ?===============================?
+Factorial      
 
-Sum of N numbers
+Sum of N numbers    ?===============================?
 
 Day 6
 
