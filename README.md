@@ -38,19 +38,19 @@ Power of number
 
 Day 5
 
-Basic recursion problems  ?===============================?
+Basic recursion problems  
 
 Print 1 to N
 
 Factorial      
 
-Sum of N numbers    ?===============================?
+Sum of N numbers   
 
-Day 6
+Day 6           ?===============================?
 
-Time & Space Complexity understanding
+Time & Space Complexity understanding   
 
-Solve 3 easy math problems
+Solve 3 easy math problems     ?===============================?
 
 Day 7
 

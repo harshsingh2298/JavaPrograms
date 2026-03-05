@@ -1,0 +1,684 @@
+Add two numbers entered by the user.
+
+Subtract two numbers.
+
+Multiply two numbers.
+
+Divide two numbers and print quotient and remainder.
+
+Find the average of three numbers.
+
+Find the square of a number.
+
+Find the cube of a number.
+
+Find the area of a rectangle.
+
+Find the perimeter of a rectangle.
+
+Find the area of a triangle.
+
+Find the area of a circle.
+
+Convert Celsius to Fahrenheit.
+
+Convert Fahrenheit to Celsius.
+
+Convert kilometers to meters.
+
+Convert meters to centimeters.
+
+Find the largest of two numbers.
+
+Find the smallest of two numbers.
+
+Check whether a number is even or odd.
+
+Find the sum of digits of a number.
+
+Reverse a number.
+
+Find the factorial of a number.
+
+Check whether a number is positive or negative.
+
+Check whether a number is divisible by 5.
+
+Check whether a number is divisible by both 3 and 7.
+
+Find the greatest of three numbers.
+
+Calculate simple interest.
+
+Calculate compound interest.
+
+Find the square root of a number.
+
+Find the power of a number.
+
+Swap two numbers using a temporary variable.
+
+Swap two numbers without using a third variable.
+
+Find the sum of first N natural numbers.
+
+Find the sum of even numbers up to N.
+
+Find the sum of odd numbers up to N.
+
+Count the digits in a number.
+
+Check whether a number is a palindrome.
+
+Check whether a number is prime.
+
+Find all factors of a number.
+
+Find the sum of factors of a number.
+
+Find the largest digit in a number.
+
+Find the smallest digit in a number.
+
+Convert seconds into hours, minutes, and seconds.
+
+Convert days into years, weeks, and days.
+
+Calculate percentage of marks.
+
+Find the remainder when a number is divided by another number.
+
+Calculate the area of a square.
+
+Find the cube root of a number.
+
+Calculate the average of N numbers.
+
+Check whether a number is Armstrong.
+
+Find the difference between two numbers.
+
+2. Logic-Building Java Problems (Good for Interviews)
+
+Print numbers from 1 to 100 without using loops.
+
+Find the second largest number in an array.
+
+Find duplicate elements in an array.
+
+Reverse an array.
+
+Find missing number in an array (1–100).
+
+Find the maximum and minimum element in an array.
+
+Check if two strings are anagrams.
+
+Count vowels and consonants in a string.
+
+Reverse a string without using built-in methods.
+
+Check whether a string is palindrome.
+
+Print Fibonacci series up to N numbers.
+
+Find the GCD of two numbers.
+
+Find the LCM of two numbers.
+
+Remove duplicates from an array.
+
+Count frequency of elements in an array.
+
+Print multiplication table of a number.
+
+Sort an array without using built-in sort.
+
+Find the sum of elements in an array.
+
+Print numbers divisible by 3 and 5 between 1–100.
+
+Find the longest word in a sentence.
+
+3. Java Problems From Very Easy → Hard
+Very Easy
+
+Print "Hello World".
+
+Print numbers from 1 to 10.
+
+Add two numbers.
+
+Check even or odd.
+
+Print multiplication table.
+
+Easy
+
+Reverse a number.
+
+Find factorial.
+
+Check palindrome number.
+
+Find largest of three numbers.
+
+Print Fibonacci series.
+
+Medium
+
+Check prime numbers between 1–100.
+
+Sort an array.
+
+Find duplicate numbers in an array.
+
+Count words in a sentence.
+
+Find missing number in array.
+
+Hard
+
+Implement binary search.
+
+Find longest palindrome substring.
+
+Implement matrix multiplication.
+
+Rotate an array by K positions.
+
+1. 50 Java Practice Math Problems (Beginner Friendly)
+
+Add two numbers entered by the user.
+
+Subtract two numbers.
+
+Multiply two numbers.
+
+Divide two numbers and print quotient and remainder.
+
+Find the average of three numbers.
+
+Find the square of a number.
+
+Find the cube of a number.
+
+Find the area of a rectangle.
+
+Find the perimeter of a rectangle.
+
+Find the area of a triangle.
+
+Find the area of a circle.
+
+Convert Celsius to Fahrenheit.
+
+Convert Fahrenheit to Celsius.
+
+Convert kilometers to meters.
+
+Convert meters to centimeters.
+
+Find the largest of two numbers.
+
+Find the smallest of two numbers.
+
+Check whether a number is even or odd.
+
+Find the sum of digits of a number.
+
+Reverse a number.
+
+Find the factorial of a number.
+
+Check whether a number is positive or negative.
+
+Check whether a number is divisible by 5.
+
+Check whether a number is divisible by both 3 and 7.
+
+Find the greatest of three numbers.
+
+Calculate simple interest.
+
+Calculate compound interest.
+
+Find the square root of a number.
+
+Find the power of a number.
+
+Swap two numbers using a temporary variable.
+
+Swap two numbers without using a third variable.
+
+Find the sum of first N natural numbers.
+
+Find the sum of even numbers up to N.
+
+Find the sum of odd numbers up to N.
+
+Count the digits in a number.
+
+Check whether a number is a palindrome.
+
+Check whether a number is prime.
+
+Find all factors of a number.
+
+Find the sum of factors of a number.
+
+Find the largest digit in a number.
+
+Find the smallest digit in a number.
+
+Convert seconds into hours, minutes, and seconds.
+
+Convert days into years, weeks, and days.
+
+Calculate percentage of marks.
+
+Find the remainder when a number is divided by another number.
+
+Calculate the area of a square.
+
+Find the cube root of a number.
+
+Calculate the average of N numbers.
+
+Check whether a number is Armstrong.
+
+Find the difference between two numbers.
+
+2. Logic-Building Java Problems (Good for Interviews)
+
+Print numbers from 1 to 100 without using loops.
+
+Find the second largest number in an array.
+
+Find duplicate elements in an array.
+
+Reverse an array.
+
+Find missing number in an array (1–100).
+
+Find the maximum and minimum element in an array.
+
+Check if two strings are anagrams.
+
+Count vowels and consonants in a string.
+
+Reverse a string without using built-in methods.
+
+Check whether a string is palindrome.
+
+Print Fibonacci series up to N numbers.
+
+Find the GCD of two numbers.
+
+Find the LCM of two numbers.
+
+Remove duplicates from an array.
+
+Count frequency of elements in an array.
+
+Print multiplication table of a number.
+
+Sort an array without using built-in sort.
+
+Find the sum of elements in an array.
+
+Print numbers divisible by 3 and 5 between 1–100.
+
+Find the longest word in a sentence.
+
+3. Java Problems From Very Easy → Hard
+Very Easy
+
+Print "Hello World".
+
+Print numbers from 1 to 10.
+
+Add two numbers.
+
+Check even or odd.
+
+Print multiplication table.
+
+Easy
+
+Reverse a number.
+
+Find factorial.
+
+Check palindrome number.
+
+Find largest of three numbers.
+
+Print Fibonacci series.
+
+Medium
+
+Check prime numbers between 1–100.
+
+Sort an array.
+
+Find duplicate numbers in an array.
+
+Count words in a sentence.
+
+Find missing number in array.
+
+Hard
+
+Implement binary search.
+
+Find longest palindrome substring.
+
+Implement matrix multiplication.
+
+Rotate an array by K positions.
+
+Implement a simple calculator using switch.
+
+
+Print "Hello World".
+
+Print numbers from 1 to 100.
+
+Add two numbers.
+
+Subtract two numbers.
+
+Multiply two numbers.
+
+Divide two numbers.
+
+Find the remainder of division.
+
+Swap two numbers.
+
+Check if a number is even or odd.
+
+Find the largest of two numbers.
+
+Find the largest of three numbers.
+
+Find the smallest of three numbers.
+
+Find the average of numbers.
+
+Convert Celsius to Fahrenheit.
+
+Convert kilometers to meters.
+
+Find square of a number.
+
+Find cube of a number.
+
+Calculate simple interest.
+
+Calculate compound interest.
+
+Convert seconds to hours and minutes.
+
+Numbers & Loops (21–40)
+
+Print multiplication table of a number.
+
+Print numbers from N to 1.
+
+Find factorial of a number.
+
+Print Fibonacci series.
+
+Find sum of first N natural numbers.
+
+Find sum of even numbers.
+
+Find sum of odd numbers.
+
+Reverse a number.
+
+Check palindrome number.
+
+Count digits in a number.
+
+Find largest digit in a number.
+
+Find smallest digit in a number.
+
+Find sum of digits.
+
+Check Armstrong number.
+
+Check prime number.
+
+Print prime numbers from 1–100.
+
+Find GCD of two numbers.
+
+Find LCM of two numbers.
+
+Print factors of a number.
+
+Check perfect number.
+
+Arrays (41–60)
+
+Read elements of an array.
+
+Print array elements.
+
+Find sum of array elements.
+
+Find average of array elements.
+
+Find largest element in array.
+
+Find smallest element in array.
+
+Reverse an array.
+
+Sort array in ascending order.
+
+Sort array in descending order.
+
+Find second largest element.
+
+Find duplicate elements.
+
+Remove duplicates.
+
+Count frequency of elements.
+
+Merge two arrays.
+
+Find missing number in array.
+
+Rotate array left.
+
+Rotate array right.
+
+Find common elements in two arrays.
+
+Split array into two parts.
+
+Check if array is sorted.
+
+Strings (61–80)
+
+Print a string.
+
+Find length of string.
+
+Reverse a string.
+
+Check palindrome string.
+
+Count vowels in a string.
+
+Count consonants.
+
+Count words in sentence.
+
+Convert string to uppercase.
+
+Convert string to lowercase.
+
+Remove spaces from string.
+
+Find duplicate characters.
+
+Replace characters in string.
+
+Check anagram strings.
+
+Find first non-repeating character.
+
+Find most frequent character.
+
+Count occurrences of character.
+
+Remove duplicate characters.
+
+Split string into words.
+
+Find longest word in sentence.
+
+Check if string contains substring.
+
+Advanced Logic (81–100)
+
+Implement binary search.
+
+Implement linear search.
+
+Implement bubble sort.
+
+Implement selection sort.
+
+Implement insertion sort.
+
+Matrix addition.
+
+Matrix multiplication.
+
+Transpose of matrix.
+
+Rotate matrix.
+
+Find diagonal sum of matrix.
+
+Implement stack using array.
+
+Implement queue using array.
+
+Balanced parentheses checker.
+
+Find longest palindrome substring.
+
+Implement simple calculator.
+
+Implement number guessing game.
+
+Create student grade system.
+
+Library management system (simple).
+
+Bank account simulation.
+
+Tic-Tac-Toe game in Java.
+
+2. Java Pattern Problems (Important for Interviews)
+Star Patterns
+*
+**
+***
+****
+*****
+*****
+****
+***
+**
+*
+    *
+   ***
+  *****
+ *******
+*********
+*
+**
+***
+****
+***
+**
+*
+Number Patterns
+1
+12
+123
+1234
+12345
+1
+22
+333
+4444
+55555
+12345
+1234
+123
+12
+1
+Alphabet Patterns
+A
+AB
+ABC
+ABCD
+ABCDE
+A
+BB
+CCC
+DDDD
+EEEEE
+3. Daily 30-Day Java Coding Challenge Plan
+Week 1 – Basics
+
+Day 1 – Hello World, variables
+Day 2 – Input/output programs
+Day 3 – Arithmetic operations
+Day 4 – If-else problems
+Day 5 – Switch statement programs
+Day 6 – Simple math programs
+Day 7 – Mini calculator project
+
+Week 2 – Loops & Numbers
+
+Day 8 – For loop practice
+Day 9 – While loop practice
+Day 10 – Factorial & Fibonacci
+Day 11 – Prime numbers
+Day 12 – Palindrome numbers
+Day 13 – Armstrong numbers
+Day 14 – Number pattern programs
+
+Week 3 – Arrays & Strings
+
+Day 15 – Array basics
+Day 16 – Array searching
+Day 17 – Array sorting
+Day 18 – String basics
+Day 19 – String manipulation
+Day 20 – Palindrome & anagram strings
+Day 21 – Pattern programs
+
+Week 4 – Advanced Logic
+
+Day 22 – Binary search
+Day 23 – Sorting algorithms
+Day 24 – Matrix problems
+Day 25 – Recursion basics
+Day 26 – Stack implementation
+Day 27 – Queue implementation
+Day 28 – Mini project (calculator / game)
+Day 29 – Practice interview questions
+Day 30 – Build a small Java project
