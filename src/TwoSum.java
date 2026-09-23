@@ -1,45 +1,53 @@
-import java.util.Arrays;
+package org.example;
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.IntStream;
 
-public class TwoSum {
+class twoSum {
+
     public static void main(String[] args) {
-        int [] arr = new int[]{12,32,3,4,78,34,5,7,2,1,5,6,8,9};
-        Arrays.sort(arr);
-        // Two pointer method but original index is lost
-        int target = 14;
-        int first = 0;
-        int last = arr.length-1;
-        while (first<last){
-            int sum = arr[first] + arr[last];
 
-            if (sum == target){
-                System.out.println("first "+arr[first] +"+"+"last "+arr[last] +"="+sum);
-                break;
-            } else if (sum <target) {
-                first++;
-            }else {
-                last--;
+        int[] arr = new int[]{2, 4, 3, 6, 5, 7, 9};
+        int target = 15;
+
+        // Use HashMap for maximum performance (O(1) lookups)
+        Map<Integer, Integer> map = new HashMap<>();
+
+        IntStream.range(0,arr.length).filter(i->{
+            int current = arr[i];
+            int reminder = target-current;
+            if (map.containsKey(reminder)){
+                System.out.println(reminder+" using stream "+current);
             }
-        }
-         // HasMap Method ============================================
+            map.put(current,i);
 
-        Map<Integer,Integer> map = new HashMap<>();
-        for (int i = 0; i < arr.length; i++) {
-            int complement = target - arr[i];
+            return false;
+        }).toArray();
 
-            if (map.containsKey(complement)) {
-                System.out.println(
-                        "Indexes: " + map.get(complement) + " , " + i
-                );
-                System.out.println(
-                        "Values: " + complement + " + " + arr[i] + " = " + target
-                );
-                break;
-            }
 
-            map.put(arr[i], i);
-        }
 
+
+
+//
+//
+//        // Single pass through the array
+//        for (int i = 0; i < arr.length; i++) {
+//
+//            int currentNum = arr[i];
+//            int complement = target - currentNum;
+//
+//            // Look backward: Is the number we need already in the map?
+//            if (map.containsKey(complement)) {
+//                // Found a pair! Print the numbers
+//                System.out.println(currentNum + " and " + complement);
+//
+//                // If you want to print indices:
+//                // System.out.println("Indices: " + i + " and " + map.get(complement));
+//            }
+//
+//            // Add the current number and its index to the map for future elements to find
+//            map.put(currentNum, i);
+//        }
     }
 }

@@ -1,30 +1,43 @@
+package org.example;
+
 import java.util.Scanner;
 
 public class PrimeNumber {
+
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number");
+        int number = scanner.nextInt();
+        if (findPrimeNumber(number)){
+            System.out.println("Number is Prime "+number);
+        }else
+            System.out.println("Number is Not a Prime Number "+number);
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Number");
-        int num = sc.nextInt();
+        febo(number);
+    }
 
-        if (num <= 1) {
-            System.out.println("Number is not a Prime Number");
-            return;
+
+    public static boolean findPrimeNumber(int number){
+        for (int i=2;i<=number/2;i++){
+            if (number % i == 0)
+                return false;
         }
 
-        boolean isPrime = true;
+        return true;
+    }
 
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                isPrime = false;
-                break;
-            }
-        }
+    public static void febo(int number){
+        int first = 0;
+        int second = 1;
+        int next = 0;
 
-        if (isPrime) {
-            System.out.println("Number is a Prime Number");
-        } else {
-            System.out.println("Number is not a Prime Number");
+        for (int i=0;i<=number;i++){
+            System.out.println(" - "+first);
+            next = first+second;
+            second = first;
+            first = next;
         }
     }
+
+
 }
