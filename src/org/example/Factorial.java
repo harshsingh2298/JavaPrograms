@@ -1,13 +1,12 @@
-<<<<<<< HEAD
+
 package org.example;
 
-=======
->>>>>>> ac3b7fc7096be5452cfe85a06e7ca42b19a0b345
+
 import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
-<<<<<<< HEAD
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Number");
         int number = scanner.nextInt();
@@ -15,11 +14,11 @@ public class Factorial {
         for (int i=1;i<=number;i++){
             factorial = factorial*i;
         }
-=======
+
         Scanner sc = new Scanner(System.in);
         System.out.println("ENTER NUMBER FOR FACTORIAL");
         int num = sc.nextInt();
-        int factorial = 1;
+         factorial = 1;
 
         for (int i = 2; i <= num; i++) {
             System.out.println(factorial + "*");
@@ -56,12 +55,9 @@ public class Factorial {
             second = temp1;
 
         }
->>>>>>> ac3b7fc7096be5452cfe85a06e7ca42b19a0b345
+
 
         System.out.println("Factorial of "+number+" is "+factorial);
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> ac3b7fc7096be5452cfe85a06e7ca42b19a0b345
 }
