@@ -141,6 +141,12 @@ public class NewPractice {
 
         System.out.println(groupedAnagram);
 
+        List<Integer> unsortNumber = Arrays.asList(3, 5, 9, 5, 9, 1);
+
+        // give second highest number
+
+        long second = unsortNumber.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+        System.out.println(second);
 
     }
 }
