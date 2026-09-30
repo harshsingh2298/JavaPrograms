@@ -129,5 +129,18 @@ public class NewPractice {
 
       //  String repName = duplicateName.stream().collect(Collectors.groupingBy(n->n,Collectors.counting()));
 
+
+        List<String> wordsArray = Arrays.asList("listen", "pot", "silent", "top", "enlist", "opt", "hello");
+
+
+        Map<String,List<String>> groupedAnagram = wordsArray.stream().collect(Collectors.groupingBy(word-> {
+            char[] ch = word.toCharArray();
+            Arrays.sort(ch);
+            return new String(ch);
+        }));
+
+        System.out.println(groupedAnagram);
+
+
     }
 }
