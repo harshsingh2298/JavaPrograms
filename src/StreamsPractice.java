@@ -199,8 +199,30 @@ public class StreamsPractice {
         System.out.println("mapToInt Avg "+avg);
 
 
+        String input2 = "swiss";
+
+        //first non repeting character
+       char wd = input2.toLowerCase().chars().mapToObj(a-> (char) a)
+                .collect(Collectors.groupingBy(a->a,LinkedHashMap::new,Collectors.counting()))
+                .entrySet().stream().filter(a->a.getValue()==1)
+                .map(Map.Entry::getKey)
+                .findFirst()
+               .orElse(null);
+
+        System.out.println(" 1 char "+wd);
+        long ws = input2.toLowerCase().chars()
+                .mapToObj(a-> (char)a)
+                .collect(Collectors.groupingBy(a->a,LinkedHashMap::new,Collectors.counting()))
+                .entrySet().stream()
+                .filter(a->a.getValue()==1)
+                .map(Map.Entry::getValue)
+                .findFirst()
+                .orElse(null);
+
+        System.out.println("Index of first non repeting char "+ws);
 
 
 
     }
+
 }
