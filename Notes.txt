@@ -114,7 +114,75 @@ Bean ready for use
 “BeanPostProcessor is a Spring extension point that allows processing beans before and after initialization. It can modify or wrap beans and is important to several Spring framework features, including proxy-based behavior.”
 
 
+Spring vs Spring Boot	Spring provides core capabilities; Boot simplifies setup and configuration.
+
+IoC	Spring takes responsibility for managing objects and their dependencies.
+
+DI	Dependencies are supplied to an object by the container.
+
+Bean	An object managed by Spring.
+
+@Component / @Service	Mark classes for component scanning.
+
+@Repository	Data-access stereotype with persistence exception translation support.
+
+@RestController	Writes handler return values to the HTTP response body by default.
+
+@Bean	Explicitly registers an object returned by a configuration method.
+
+@Primary / @Qualifier	Resolve ambiguity when multiple beans match a dependency.
+
+Constructor injection	Makes required dependencies explicit and supports final fields.
+
+Singleton scope	One instance per application context; thread safety is not automatic.
+
+Bean lifecycle	Instantiation, dependency injection, initialization, use, destruction.
+
+AOP proxy	Intercepts calls to apply cross-cutting behavior such as transactions.
+
+Self-invocation	Direct internal calls bypass proxy-based interception.
+
+BeanPostProcessor	Processes beans before and after initialization.
 
 
 
+
+
+ Revision 4 — JVM, memory and garbage collection
  
+ 
+ 1. JVM memory areas
+Stack
+
+Each thread has its own stack. It holds method frames, local variables, and references used during method execution.
+
+Heap
+
+Shared across threads. Objects and arrays are allocated here.
+
+Metaspace
+
+Stores class metadata. In Java 8 and later, it replaced PermGen.
+
+Interview trap: Don't say every primitive variable lives on the stack. A primitive local variable may be stored in a stack frame, while a primitive instance field is part of its object on the heap.
+
+
+2. Garbage collection (GC)
+The garbage collector reclaims memory occupied by objects that are no longer reachable from GC roots.
+Common GC roots include:
+- References held by active threads and their stack frames.
+- Static references associated with loaded classes.
+- JNI references and other JVM-managed roots.
+Important: An object being eligible for garbage collection does not mean it will be collected immediately. Calling System.gc() is only a request or hint, not a guarantee.
+Also, Java can still have memory leaks: objects may remain reachable even when the application no longer needs them.
+
+
+3. JVM errors to distinguish
+
+Error	Typical cause
+
+StackOverflowError	Excessive recursion or stack-frame growth.
+
+OutOfMemoryError	JVM cannot satisfy a memory allocation request.
+
+Memory leak	Unneeded objects remain reachable, causing memory usage to grow.
