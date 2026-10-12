@@ -1,0 +1,21 @@
+Transaction Notes 
+
+1> @Transaction defines transaction boundary in supporting spring transaction setups.
+2> Default rollback Rollback only for Runtime exception (UnChecked) checked or Complie time error dont rollback by default 
+3> self invocation direct call within the same object bypass proxy based transaction interseption
+4> Required join an existing transaction and roll back
+5> Required_new Suspend the outer transaction and starts an independent transaction
+6> Mandatory Requires and existing transaction or throw an exception
+7> Supports  join if one exist or contineoue without one 
+8> not_supported suspends an existing transaction and runs without one 
+9> never throws an excepting if one exist
+10> isolation  controlls the visibility and consistency of concurrent database operations.
+
+
+SPRING CORE AND SPRING BOOT
+
+Spring Framework : Provides Ioc,dependancy Injection AOP transaction management, and web developement capability.
+Spring Boot : Simplifies building spring application using auto-configuration, starter dependancy,and embedded servers
+
+SpringApplication.run() :- bootstrap the spring application context and for typical web application, starts embedded web server.
+
