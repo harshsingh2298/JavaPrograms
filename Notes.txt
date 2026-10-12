@@ -19,3 +19,102 @@ Spring Boot : Simplifies building spring application using auto-configuration, s
 
 SpringApplication.run() :- bootstrap the spring application context and for typical web application, starts embedded web server.
 
+2:- Ioc,DI and Bean 
+
+Ioc Spring takes responsibility for creating and managing application objects insted of living all to application code
+
+DI Spring supplies an objects required dependancy commonly through consteuctor injection.
+
+Bean An object managed by the spring container. A bean is an ordinary java object with spring managed lifecycle and dependancy
+
+
+Annotation	Purpose
+@Component	Marks a class for component scanning.
+@Service	Identifies a service/business-layer component.
+@Repository	Identifies a data-access component and supports persistence exception translation.
+@Controller	Defines a Spring MVC controller.
+@RestController	Controller whose handler return values are written to the response body by default.
+@Configuration	Declares a configuration class.
+@Bean	Declares a bean through a configuration method.
+@Autowired	Requests dependency injection.
+
+
+Important distinction: @Component is placed on a class for scanning; @Bean is placed on a method that returns an object for Spring to manage.
+
+4. Bean lifecycle and scopes
+Typical lifecycle:
+Bean definition → Instantiation → Dependency injection → Initialization → Ready for use → Destruction
+- @PostConstruct: runs after dependency injection during initialization.
+- @PreDestroy: runs during normal bean destruction, such as application-context shutdown.
+Default scope is singleton — one bean instance per Spring application context. Singleton does not automatically mean thread-safe.
+Other scopes include prototype, request, and session.
+
+
+Your fix is on the right track. The two annotations you were thinking of are @Primary and @Qualifier.
+Fix 1: @Primary
+Use this when one implementation should be the default choice.
+
+
+“@Bean allows us to explicitly register an object with the Spring container. It is particularly useful for third-party classes that we cannot annotate with @Component.”
+
+
+AOP and transaction proxies
+Spring often uses proxies to apply cross-cutting features such as transaction management, logging, and security.
+
+
+The Spring proxy intercepts the method call and applies transaction management around the actual method execution.
+Your explanation is right, with one important qualification: by default, Spring rolls back when an unchecked exception (RuntimeException) or Error escapes the transactional method. Not every unchecked exception necessarily causes rollback if custom rollback rules are configured.
+
+
+Question 6 — @RestController vs @Controller
+
+@RestController
+public class EmployeeController {
+
+    @GetMapping("/employee")
+    public Employee getEmployee() {
+        return new Employee(1, "Rahul");
+    }
+}
+
+
+
+B. Spring treats the returned object as the HTTP response body, commonly serializing it to JSON.
+
+
+Your answer has the right idea, but one correction:
+ @RestController does not contain a ResponseEntity object.
+ @RestController combines @Controller and @ResponseBody.
+ 
+ Spring commonly uses an HttpMessageConverter, such as Jackson's JSON converter, to serialize the returned object.
+Remember:
+- @RestController → returns response bodies, commonly JSON.
+- @Controller → commonly returns view names, unless response-body handling is specified.
+- ResponseEntity → optionally controls the response status, headers, and body.
+
+“Manually creating a Spring component with new bypasses the Spring container. Constructor injection ensures that Spring supplies the managed bean and its dependencies.”
+
+A BeanPostProcessor lets Spring process bean instances before and after initialization. It can inspect, modify, or wrap a bean. Spring's proxy-based infrastructure uses bean-processing mechanisms to expose proxied objects for features such as transactions.
+
+
+
+Bean instantiated
+       ↓
+Dependencies injected
+       ↓
+BeanPostProcessor (before initialization)
+       ↓
+@PostConstruct
+       ↓
+BeanPostProcessor (after initialization)
+       ↓
+Bean ready for use
+
+
+“BeanPostProcessor is a Spring extension point that allows processing beans before and after initialization. It can modify or wrap beans and is important to several Spring framework features, including proxy-based behavior.”
+
+
+
+
+
+ 
